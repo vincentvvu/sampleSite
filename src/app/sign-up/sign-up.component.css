@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .grid-container-sign-log-btn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .grid-container-icon-input{
+    display: grid;
+    grid-template-columns: 15% 85%;
+  }
+  .background-image {
+    background: url('./../../assets/background.jpeg') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .block {
+    height: 40px;
+  }
+  .whole_border{
+    width: 81%;max-width: 1200px;margin: auto
+  }
+  .img_background {
+    width: 100%;
+  }
+  
+  .img_container {
+    display: flex;
+    justify-content: center;
+  }
+  .p1_container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  .p1_word_style {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .sign_log_box{
+    background: white;
+    margin: auto;
+    width: 50%;
+    max-width: 800px;
+    min-width: 500px;
+    padding-bottom: 30px;
+  }
+  .choosed_btn_div{
+    text-align: center;
+    color: #290a26;
+    font-size: 25px;
+    font-weight: 800;
+    background: white;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .not_choosed_btn_div{
+    text-align: center;
+    color: #290a26;
+    font-size: 25px;
+    font-weight: 800;
+    background: #e8e7e5;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .input_boxes{
+    padding-left: 20px;
+    padding-right: 20px
+  }
+  .icons_left{
+    border: 2px solid lightgrey;
+  }
+  
+  .icon_class{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .input_boxes_row{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .input_class{
+    height: 100%;
+    margin-left: -2px;
+    border: 2px solid lightgrey;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .sign_up_btn{
+    width: 100%;
+    margin-top: 20px;
+    background: black;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 0;
+  }
+  .sign_up_btn:hover{
+    color: white;
+  }
+  .already_word{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .already_word a{
+    color: black;
+  }
+  .inputError{
+    width: 80%;
+    background: black;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1055px) {
+    .p1_word_style{
+      font-size: 35px;
+    }
+    .p1_container{
+      height: 80px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .p1_word_style {
+      font-size: 30px;
+    }
+    .sign_up_btn{
+      font-size: 22px;
+    }
+  }
+  @media screen and (max-width: 620px) {
+    .whole_border{
+      width: 91%;
+    }
+    .p1_word_style{
+      font-size: 25px;
+    }
+    .sign_log_box{
+      width: 90%;
+      margin: auto;
+      min-width: 90%;
+      max-width: 90%;
+    }
+    .input_class{
+      font-size: 18px;
+    }
+    .sign_up_btn{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 460px){
+    .p1_word_style{
+      font-size: 22px;
+    }
+    .choosed_btn_div{
+      font-size: 20px;
+    }
+    .not_choosed_btn_div{
+      font-size: 20px;
+    }
+    .sign_up_btn{
+      font-size: 20px;
+    }
+    .already_word{
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .p1_container {
+      flex-direction: column;
+    }
+  
+    .p1_word_style {
+      font-size: 20px;
+      text-align: center;
+    }
+    .input_class{
+      font-size: 15px;
+    }
+    .input_boxes{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .input_boxes_row{
+      width: 100%;
+    }
+    .sign_up_btn{
+      font-size: 18px;
+    }
+    .p1_container{
+      margin-bottom: 30px;
+    }
+  }
+  

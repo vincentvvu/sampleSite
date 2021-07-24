@@ -1,0 +1,181 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/background.jpeg");
+    background-size: cover; 
+  }
+  .whole_border{
+    width: 81%;max-width: 1200px;margin: auto
+  }
+  .block {
+    height: 100px;
+  }
+  
+  .img_background {
+    width: 100%;
+  }
+  
+  .img_container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .p1_container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  .p1_word_style {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .p2_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-bottom: 40px;
+    margin-top: 15px;
+  }
+  
+  .p2_word_style {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .button_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .login_button {
+    width: 250px;
+    background-color: white;
+    margin-right: 20px;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    color: #7758df;
+    font-weight: bold;
+    margin-left: 20px;
+    border-radius: 0;
+  }
+  
+  .sign_button {
+    width: 250px;
+    background: transparent;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 0;
+  }
+  
+  .or_word{
+    font-size: 30px; font-weight: bold;color: white
+  }
+  
+  @media screen and (max-width: 1055px) {
+    .p1_word_style{
+      font-size: 35px;
+    }
+    .p2_word_style{
+      font-size: 50px;
+    }
+    .p1_container{
+      height: 80px;
+    }
+    .p2_container{
+      padding-bottom: 60px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .p1_word_style{
+      font-size: 30px;
+    }
+    .p2_word_style{
+      font-size: 45px;
+    }
+    .login_button{
+      width: 200px;
+      font-size: 22px;
+    }
+    .sign_button{
+      width: 200px;
+      font-size: 22px;
+    }
+  }
+  @media screen and (max-width: 620px) {
+    .whole_border{
+      width: 91%;
+    }
+    .p1_word_style{
+      font-size: 25px;
+    }
+    .p2_word_style{
+      font-size: 35px;
+    }
+    .login_button{
+      font-size: 20px;
+    }
+    .sign_button{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .button_container{
+      display: grid;
+    }
+    .or_word{
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 460px){
+    .p1_word_style{
+      font-size: 22px;
+    }
+  }
+  @media screen and (max-width: 410px){
+    .p1_container{
+      flex-direction: column;
+    }
+    .p1_word_style{
+      font-size: 20px;
+      text-align: center;
+    }
+    .p2_word_style{
+      font-size: 25px;
+    }
+    .button_container{
+      flex-wrap: wrap;
+    }
+    .login_button{
+      font-size: 18px;
+    }
+    .sign_button{
+      font-size: 18px;
+    }
+  }
+  

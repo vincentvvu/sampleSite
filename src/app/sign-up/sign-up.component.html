@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<div class="background-image">
+  <div class="whole_border">
+    <div class="block">
+    </div>
+    <div class="img_background">
+      <div class="img_container">
+        <img src="./assets/cat.png" style="width: 100px" alt="image here">
+      </div>
+    </div>
+
+
+    <!--    sign up box   -->
+    <div class="sign_log_box">
+      <!--button box-->
+      <div class="grid-container-sign-log-btn">
+        <div class="choosed_btn_div" (click)="goToSignUp()">
+          Sign up
+        </div>
+        <div class="not_choosed_btn_div" (click)="goToLogIn()">
+          Log in
+        </div>
+      </div>
+
+      <!--  input boxes -->
+      <div class="input_boxes">
+        <div class="grid-container-icon-input input_boxes_row">
+          <div class="icons_left">
+            <img src="./../../assets/login/people_icon.png" class="icon_class">
+          </div>
+          <div class="inputs_right">
+            <input type="text" placeholder="Username" class="input_class" [(ngModel)]="userName">
+          </div>
+        </div>
+        <div class="inputError" [hidden]="!userNameError">Invalid User Name</div>
+
+        <div class="grid-container-icon-input input_boxes_row">
+          <div class="icons_left">
+            <img src="./../../assets/login/email_icon.png" class="icon_class">
+          </div>
+          <div class="inputs_right">
+            <input name="email" type="email" placeholder="Email" class="input_class" [(ngModel)]="userEmail">
+          </div>
+        </div>
+        <div class="inputError" [hidden]="!userEmailError">Invalid User Email</div>
+
+        <div class="grid-container-icon-input input_boxes_row">
+          <div class="icons_left">
+            <img src="./../../assets/login/locker_icon.png" class="icon_class">
+          </div>
+          <div class="inputs_right">
+            <input type="password" placeholder="Password" class="input_class" [(ngModel)]="userPassword">
+          </div>
+        </div>
+        <div class="inputError" [hidden]="!userPasswordError"> Invalid password</div>
+
+        <div class="grid-container-icon-input input_boxes_row">
+          <div class="icons_left">
+            <img src="./../../assets/login/locker_icon.png" class="icon_class">
+          </div>
+          <div class="inputs_right">
+            <input type="password" placeholder="Confirm password" class="input_class" [(ngModel)]="userConfirmPassword">
+          </div>
+        </div>
+        <div class="inputError" [hidden]="!userConfirmPasswordError">{{confirmPasswordErrorWording}}</div>
+
+
+        <div class=" input_boxes_row">
+          <button class="btn sign_up_btn" (click)="signUpClick()"> Sign up </button>
+        </div>
+
+      </div>
+
+      <!--      Already have an account    -->
+      <div class="already_word">
+        <p>Already have an account? <a (click)="goToLogIn()"><b>Log in</b></a></p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+

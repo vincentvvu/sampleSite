@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<div class="background-image">
+  <div class="whole_border">
+    <div class="block">
+    </div>
+    <div class="img_background">
+      <div class="img_container">
+        <img src="./assets/cat.png" style="width: 100px" alt="image here">
+      </div>
+    </div>
+
+
+    <!--    sign up box   -->
+    <div class="sign_log_box">
+      <!--button box-->
+      <div class="grid-container-sign-log-btn">
+        <div class="not_choosed_btn_div" (click)="goToSignUp()">
+          Sign up
+        </div>
+        <div class="choosed_btn_div" (click)="goToLogIn()">
+          Log in
+        </div>
+      </div>
+
+      <!--  input boxes -->
+      <div class="input_boxes">
+        <br>
+        <br>
+        <div class="grid-container-icon-input input_boxes_row">
+          <div class="icons_left">
+            <img src="./../../assets/login/people_icon.png" class="icon_class">
+          </div>
+          <div class="inputs_right">
+            <input [(ngModel)]="username" name="username" type="text" placeholder="Username" class="input_class">
+          </div>
+        </div>
+
+
+        <div class="grid-container-icon-input input_boxes_row">
+          <div class="icons_left">
+            <img src="./../../assets/login/locker_icon.png" class="icon_class">
+          </div>
+          <div class="inputs_right">
+            <input [(ngModel)]="password" name="password" type="password" placeholder="Password" class="input_class">
+          </div>
+        </div>
+
+        <div class="grid-container-checkbox-forgot input_boxes_row desktop_tablet_only">
+          <div class="">
+            <div class="grid-container-checkbox-remember">
+              <div class="checkbox_part">
+                <input id="color-input-red" class="chat-button-location-radio-input" type="checkbox"
+                       name="color-input-red" value="#f0544d"/>
+                <label for="color-input-red"></label>
+              </div>
+              <div class="checkbox_word_part">
+                <p class="remember_me">Remember me</p>
+              </div>
+            </div>
+          </div>
+          <div class="forgot_text">
+            <i><a class="forgot_link">Forgot your password?</a></i>
+          </div>
+
+
+        </div>
+
+        <div class="input_boxes_row">
+          <button class="btn sign_up_btn" (click)="signIn()"> Log in</button>
+        </div>
+
+      </div>
+
+      <!--      Already have an account    -->
+      <div class="already_word">
+        <p>Don't have an account? <a (click)="goToSignUp()"><b>Sign up</b></a></p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+

@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=CoorcqbkpI0
+https://www.youtube.com/watch?v=TrLAx27Npns
+https://ithelp.ithome.com.tw/articles/10193603
+install php on aws ec2 instance
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html#prepare-lamp-server-alami
